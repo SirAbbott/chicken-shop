@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+
 const Nav = () => {
   return (
     <nav className="navbar is-danger">
@@ -11,9 +13,11 @@ const Nav = () => {
       <div className="navbar-end">
         <div className="navbar-item">
           <div className="buttons">
-            <a className="button is-light">
-            Add a shop
-            </a>
+            <Link to="/chickenshop/new">
+              <a className="button is-light">
+              Add a shop
+              </a>
+            </ Link>
           </div>
         </div>
       </div>

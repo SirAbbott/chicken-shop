@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Nav from './components/Nav'
 import ShopIndex from './components/ShopIndex'
 import ShopShow from './components/ShopShow'
+import ShopNew from './components/ShopNew'
 
 import 'bulma'
 import './style.scss'
@@ -20,6 +21,7 @@ class App extends React.Component {
             <Nav />
           </nav>
           <Switch>
+            <Route path="/chickenshop/new" component={ShopNew} />
             <Route path="/chickenshops/:id" component={ShopShow} />
             <Route path="/" component={ShopIndex} />
           </Switch>

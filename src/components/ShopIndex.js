@@ -25,7 +25,7 @@ class ShopIndex extends React.Component{
         <div className="section">
           <div className="columns is-multiline">
             {this.state.shops.map((shop, i) =>
-              <div className="column" key={i}>
+              <div className="column is-one-third" key={i}>
                 <h1 className="title is-3">{shop.name}</h1>
                 <Link to={`chickenshops/${shop._id}`} >
                   <div className="image" style={{backgroundImage: `url(${shop.image})`}}></div>
