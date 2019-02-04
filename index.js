@@ -7,7 +7,8 @@ const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const routes = require('./config/routes')
 
-mongoose.connect('mongodb://localhost/chicken-shops')
+
+mongoose.connect(process.env.MONGODB_URI)
 
 app.use(
   bodyParser.json(),
