@@ -19,9 +19,8 @@ class App extends React.Component {
       .catch(err => console.log(err.message))
   }
 
-
   render(){
-    if(!this.state.shops) return <p> Chicken cooking </p>
+    if(!this.state.shops) return <p> Chicken cooking.. </p>
     console.log(this.state.shops.name)
     return(
       <div>

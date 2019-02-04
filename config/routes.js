@@ -2,11 +2,11 @@ const router = require('express').Router()
 
 const chickenShopController = require('../controllers/chickenShops')
 
-router.route('/api/chickenshops')
+router.route('/chickenshops')
   .get(chickenShopController.index)
   .post(chickenShopController.create)
 
-router.route('/api/chickenshops/:id')
+router.route('/chickenshops/:id')
   .get(chickenShopController.show)
 
 module.exports = router
