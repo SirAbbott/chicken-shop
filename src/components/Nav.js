@@ -14,7 +14,7 @@ const Nav = () => {
         <div className="navbar-item">
           <div className="buttons">
             <Link to="/chickenshop/new">
-              <a className="button is-light">
+              <a className="button is-info is-inverted">
               Add a shop
               </a>
             </ Link>

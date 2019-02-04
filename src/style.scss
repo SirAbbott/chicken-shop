@@ -5,3 +5,11 @@ div.image {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.navbar-brand {
+  .navbar-item {
+    img {
+      max-height: 100%;
+    }
+  }
+}
